@@ -26,6 +26,8 @@ namespace ConsoleWebAPI
         {
             app.UseMvc(s =>
             {
+
+
                 s.MapRoute("default", "{controller}/{action}/{id?}", "test/index");
             });
             app.Run(context =>
